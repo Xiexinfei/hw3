@@ -1,5 +1,4 @@
 # hw3
-main.cpp中：
 
 有四個RPC function，
 （橘燈）gesture：在PC輸入讓mbed偵測手勢，決定要用哪個角度
@@ -16,5 +15,4 @@ PC此時會將此角度存起來，接著reset mbed（以resewee function來rese
 選擇gesture可再偵測一次手勢，選擇角度，選擇tilt則是開始偵測角度，tilt function首先會先重連網路（因為剛剛reset mbed）
 接著initialize現在的加速度（led1亮）再開始偵測角度（led2亮）超過所選角度PC會回傳訊息，達一定次數後，再次以resewee reset mbed
 
-mqtt_client.py中，
-若為gesture mode，print訊息，
+（主要是在main.cpp和mqtt_client.py中作修改）
